@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B94AE"
+    android:orientation="vertical"
+    tools:context=".QuizTela">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/txtNumPergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="QUESTÃO 1"
+        android:textColor="#FBFDFC"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imgvPlaca"
+        android:layout_width="271dp"
+        android:layout_height="225dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/brasil" />
+
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="Qual é o significado dessa placa?"
+        android:textColor="#FBFDFC"
+        android:textSize="19sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp">
+
+        <RadioButton
+            android:id="@+id/rdOpcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_2"
+            android:text="Opção 1"
+            android:textColor="#EBFCFF"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdOpcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_2"
+            android:text="Opção 2"
+            android:textColor="#EBFCFF"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdOpcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_2"
+            android:text="Opção 3"
+            android:textColor="#EBFCFF"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdOpcao4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_2"
+            android:text="Opção 4"
+            android:textColor="#EBFCFF"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#17324D"
+        android:fontFamily="@font/baloo"
+        android:onClick="ConfirmarResposta"
+        android:text="PRÓXIMO"
+        android:textColor="#FBFDFC"
+        android:textSize="19sp"
+        app:cornerRadius="10dp" />
+</LinearLayout>
